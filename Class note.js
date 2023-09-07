@@ -13,4 +13,3 @@ const coolArray = [
 
 coolArray[0] = 'another string'';
 // you can still change it this way
-
