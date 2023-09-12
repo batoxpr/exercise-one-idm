@@ -7,30 +7,37 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <header> '''
+    <header> 
+        <nav>
+            <a href="#">Box Model</a>
+            <a href="#">Flexbox</a>
+            <a href="#">Positioning Elements</a>
+            <a href="#">Heading Usage</a>
+            <a href="#">Simple Javascript</a>
+        </nav>
         </header>
     <main>
         <!-- CSS Box Model Section -->
-        <!-- <section> tag means that the content inside relates to a single theme, and
-             <div> tag is used as a block part of the webpage and don't convey any particular meaning -->
         <section class="section-wrapper">
             <div class="interior">
-                <h1>CSS Box Model</h1>
 
-                <p>Padding is inside of the element in CSS</p>
-                <p><strong>padding:40px; (inside)</strong></p>
+            <h1>CSS Box Model</h1>
+                    
+            <p>Padding is inside of the element in CSS</p>
+            <p><strong>padding:40px; (inside)</strong></p>
 
-                <p>Margin is outside of the element in CSS</p>
-                <p><strong>margin 40px (outside)</strong></p>
+            <p>Margin is outside of the element in CSS</p>
+            <p><strong>margin 40px (outside)</strong></p>
 
-                <p>Border is added to width and height of the element in CSS</p>
-                <p><strong>border: 10px solid green</strong></p>
+            <p>Border is added to width and height of the element in CSS</p>
+            <p><strong>border: 10px solid green</strong></p>
 
-
-            </div>
+        </div>
         </section>
+        <!-- <section> tag means that the content inside relates to a single theme, and
+             <div> tag is used as a block part of the webpage and don't convey any particular meaning -->
 
-        <!--Flex Display Section-->
+        <!-- Flex Box -->
         <section>
             <div class="flex-interior">
                 <div class="flex-parent">
@@ -50,7 +57,53 @@
                 </div>
             </div>
         </section>
+        <!-- Positioning -->
+        <section class="positioning-wrapper"> 
+            <div class="interior interior-positioning">
+                <h1>Positioning Elements</h1>
+                <div class="circle" style="right: 20px; top: 300px;"></div>
+                <div class="circle" style="left: 50px; bottom: 100px;"></div>
+                <div class="circle" style="right: 200px; bottom: 30px"></div>
+                <div class="square" style="left: 300px; top: 300px"></div>
+                <div class="square" style="right: 30px; bottom: 20px"></div>
+            </div>
+        </section>
+        <!-- Headers -->
+        <section>
+            <div class="interior">
+                <h1>Highest level header(h1)</h1>
+                <h2>Subsection of header one (h2)</h2>
+                <p>this is a paragraph</p>
+                <h3>Subsection of header two (h3)</h3>
+                <h4>This is a subsection of header three</h4>
+                <p>this is a paragraph</p>
+                <p>this is a paragraph</p>
+            </div>
+        </section>
+        <!-- SImple JS-->
+        <section>
+            <div class="interior">
+                <h1>Simple JavaScript</h1>
+                <script>
+                    let count = 0;
+                    
+                    function increaseCount() {
+                        count = count + 1;
+                        const countIndicator = document.querySelector(".count-indicator");
+                        return (countIndicator.innerHTML = count);
+                    }
 
+                    function decreaseCount() {
+                        count = count - 1;
+                        const countIndicator = document.querySelector(".count-indicator");
+                        return (countIndicator.innerHTML = count);
+                    }
+                </script>
+                <p>Count: <span class="count-indicator">0</span></p>
+                <button onClick="increaseCount()"> Click to increase!</button>
+                <button onClick="decreaseCount()"> Click to decrease!</button>
+            </div>
+        </section>
     </main>
     </body>
 </html>

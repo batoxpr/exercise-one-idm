@@ -1,0 +1,38 @@
+#
+
+## Variables
+let
+const
+
+## Functions
+
+function coolFunction(arg) {
+    if(typeof arg === 'string') return 'string';
+    return 'not string';
+}
+
+const thisval = coolFunction('hi'); //string
+
+const coolArrowFunction= () =>  'hello'
+
+## Objects
+
+const annoyingObject = {
+    top: [
+        {
+            middle: {
+                bottom: {
+                    thing: 'frogs'
+                }
+            }
+        }
+    ]
+}
+
+annoyingObject.top[0].middle.bottom.thing // 'frogs' way to access an object inside an object
+
+const JSONEXAMPLE = [
+    {
+        key: "value"
+    }
+]
