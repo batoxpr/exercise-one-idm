@@ -9,16 +9,16 @@
 <body>
     <header> 
         <nav>
-            <a href="#">Box Model</a>
-            <a href="#">Flexbox</a>
-            <a href="#">Positioning Elements</a>
-            <a href="#">Heading Usage</a>
-            <a href="#">Simple Javascript</a>
+            <a href="#box">Box Model</a>
+            <a href="#flex">Flexbox</a>
+            <a href="#position">Positioning Elements</a>
+            <a href="#heading">Heading Usage</a>
+            <a href="#js">Simple Javascript</a>
         </nav>
         </header>
     <main>
         <!-- CSS Box Model Section -->
-        <section class="section-wrapper">
+        <section class="section-wrapper" id ="box">
             <div class="interior">
 
             <h1>CSS Box Model</h1>
@@ -34,12 +34,10 @@
 
         </div>
         </section>
-        <!-- <section> tag means that the content inside relates to a single theme, and
-             <div> tag is used as a block part of the webpage and don't convey any particular meaning -->
 
         <!-- Flex Box -->
         <section>
-            <div class="flex-interior">
+            <div class="flex-interior" id ="flex">
                 <div class="flex-parent">
                     <div class="flex-child flex-child-big">
                         <h1>Flexbox</h1>
@@ -58,7 +56,7 @@
             </div>
         </section>
         <!-- Positioning -->
-        <section class="positioning-wrapper"> 
+        <section class="positioning-wrapper" id ="position"> 
             <div class="interior interior-positioning">
                 <h1>Positioning Elements</h1>
                 <div class="circle" style="right: 20px; top: 300px;"></div>
@@ -69,19 +67,19 @@
             </div>
         </section>
         <!-- Headers -->
-        <section>
-            <div class="interior">
+        <section class="header-wrapper" id ="heading">
+            <div class="interior interior-header">
                 <h1>Highest level header(h1)</h1>
                 <h2>Subsection of header one (h2)</h2>
-                <p>this is a paragraph</p>
                 <h3>Subsection of header two (h3)</h3>
                 <h4>This is a subsection of header three</h4>
+                <p>this is a paragraph</p>
                 <p>this is a paragraph</p>
                 <p>this is a paragraph</p>
             </div>
         </section>
         <!-- SImple JS-->
-        <section>
+        <section class="section-wrapper" id="js">
             <div class="interior">
                 <h1>Simple JavaScript</h1>
                 <script>

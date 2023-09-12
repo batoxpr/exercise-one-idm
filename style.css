@@ -72,15 +72,16 @@ header nav a:last-of-type {
 
 .section-wrapper {
     background-color: lightgreen;
-    padding: 10px;
+    padding: 20px;
 }
+
 
 .interior {
     background-color: #9ef490;
     border: 10px solid green;
     margin: 0 auto;
     max-width: 900px;
-    padding: 20px 0;
+    padding: 40px;
 }
 
 .flex-interior {
@@ -99,9 +100,10 @@ header nav a:last-of-type {
     display: flex;
     flex-basis: 40%;
     flex-shrink: 0;
-    gap: 25px;
+    gap: 20px;
     padding: 25px;
     width: 100%;
+    margin: 0 auto;
 
 }
 
@@ -147,6 +149,16 @@ header nav a:last-of-type {
     position: relative;
 }
 
+.header-wrapper {
+    background-color: rgb(251, 193, 193);
+    padding: 40px 20px;
+}
+
+.interior-header {
+    background-color: lightpink;
+    border-color: palevioletred;
+    position: relative;
+}
 .circle {
     background-color: #85c4ff;
     border: 5px solid #0e3f9e;
